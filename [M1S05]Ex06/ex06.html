@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S05- Ex06</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Semana 05 - Exercício 06</h1>
+    </header>
+
+    <section>
+        <div>
+            <strong>Classe Juros</strong>
+        </div>
+        <hr>
+        <div>
+            <p>Em três arquivos (<span class="code">index.html, app.js, Juros.js</span>) resolva o seguinte exercício:</p>
+
+            <p>Inclua o arquivo <span class="code">app.js</span> em <span class="code">index.html </span>como <span class="code">type="module"</span>.</p>
+
+            <p>Os juros de uma aplicação podem ser calculados de forma simples ou composta. <br>
+            Para o cálculo, geralmente se usa a letra <span class="code">C</span> ou <span class="code">M</span> para representar o montante final da aplicação, a letra <span class="code">i</span> para representar a taxa aplicada (ao mês ou anual) e a letra <span class="code">t</span> indicando o tempo (em meses ou anos) da aplicação.</p>
+
+            <p>Em <span class="code">Juros.js</span>, crie uma classe <strong>Juros</strong>, que tenha como atributos o <span class="code">capitalInicial</span>, a <span class="code">taxaAplicada</span> e o <span class="code">tempo</span> (no mesmo período: meses ou anos) exportando-a como padrão <span class="code">(export default)</span>.</p>
+
+            <ol type="a">
+                <li>Adicione o método <span class="code">calcularJurosSimples()</span> que faça o cálculo usando a fórmula <span class="code">J = C * i * t</span></li><br>
+                <li>Adicione o método <span class="code">calcularJurosCompostos()</span> que faça o cálculo usando a fórmula <span class="code">M = C * (1 + i) ** t</span></li><br>
+                <li>Importe a classe em <span class="code">app.js</span> e teste a implementação da classe imprimindo no console os valores de juros simples e composto para uma aplicação de 10.000 reais a uma taxa de 7% ao mês (ou seja, 0.07) pelo período de 24 meses.</li><br>
+                <li>Teste também (imprimindo igualmente no console) os valores de juros simples e composto para uma aplicação de 10.000 reais a uma taxa de 15% ao ano (ou seja, 0.15) pelo período de 10 anos.</li>
+            </ol>
+
+        </div>
+        <hr>
+        <div id="res">
+            <strong>Resultado:</strong> <br><br>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo01-Semana05/blob/main/%5BM1S03%5DEx03/script.js" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                para visuallizar o código do meu exercício.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>Aperte a tecla "<strong>F12</strong>" para visualizar o resultado no console do seu navegador.</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://github.com/GeorgeEnriqueBravo" target="_blank" rel="noopener noreferrer">
+        <p>by George Bravo</p>
+        </a>
+    </footer>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>

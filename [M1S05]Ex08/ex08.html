@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S05- Ex08</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Semana 05 - Exercício 08</h1>
+    </header>
+
+    <section>
+        <div>
+            <strong>Classe Usuário</strong>
+        </div>
+        <hr>
+        <div>
+            <p>Crie uma pagina HTML de autenticacao baseado no layout em anexo.</p>
+
+            <p>Dado a classe Usuário abaixo:</p>
+
+            <div class="code">
+                <code>         
+                    class Usuario { <br>
+                        constructor(nome, email, senha) { <br>
+                            this.nome = nome; <br>
+                            this.email = email; <br>
+                            this.senha = senha; <br>
+                        } <br><br>
+
+                        autenticar(emailInformado, senhaInformada) { <br>
+                            return (this.email === emailInformado && this.senha === senhaInformada); <br>
+                        } <br>
+                    } <br>
+                </code>
+            </div>
+
+            <p>Use esta classe 'Usuário' para implementar a autenticação quando for clicado no botão 'Acessar'.</p>
+
+            <p>Dicas:</p>
+
+            <ol type="a">
+                <li>a) Instancie um usuário indicando seus atributos: nome, email e senha (podem ser dados fixos e indicados no momento da criação do objeto).</li><br>
+                <li>Colocar no evento relacionado ao botão a chamada para uma função que faça uso do método 'autenticar' deste objeto previamente instanciado.</li><br>
+                <li>Se a autenticação tiver sucesso (resultado = true), exibir mensagem de sucesso na tela, caso contrário, exibir mensagem de credenciais inválidas.</li>
+            </ol>
+
+            <p>Sugestão: aplique estilo CSS na página para praticar!</p>
+
+        </div>
+        <hr>
+        <br>
+        <div id="login">
+            E-mail: <input type="text" id="email">
+            Senha: <input type="text" id="senha">
+            <button type="button" id="acessar">Acessar</button>
+        </div>
+        <br>
+        <div id="res"> </div>
+        <br>
+        <hr>
+        <div>
+            <p>
+                <a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo01-Semana05/blob/main/%5BM1S03%5DEx03/script.js" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                para visuallizar o código do meu exercício.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>Aperte a tecla "<strong>F12</strong>" para visualizar o resultado no console do seu navegador.</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://github.com/GeorgeEnriqueBravo" target="_blank" rel="noopener noreferrer">
+        <p>by George Bravo</p>
+        </a>
+    </footer>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>

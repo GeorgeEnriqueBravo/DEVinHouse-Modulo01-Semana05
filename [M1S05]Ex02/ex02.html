@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S05- Ex02</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Semana 05 - Exercício 02</h1>
+    </header>
+
+    <section>
+        <div>
+            <strong>Classe Fatura</strong>
+        </div>
+        <hr>
+        <div>
+            <p>Em três arquivos (index.html, app.js, Fatura.js) resolva o seguinte exercício:</p>
+
+            <p>Inclua o arquivo app.js em index.html como type="module".</p>
+
+            <p>Em Fatura.js, crie uma classe chamada <strong>Fatura</strong> que possa ser utilizada por uma fábrica, representando um item vendido e a exporte como padrão (export default).</p>
+
+            <p>Uma fatura deve incluir as seguintes informações como atributos :</p>
+
+            <ul>
+                <li>id: number identificador do item faturado (código do produto)</li>
+                <li>descricao: string com a descrição do item</li>
+                <li>quantia: number com a quantidade comprada do item</li>
+                <li>preco: number com o preço unitário do item</li>
+            </ul>
+
+            <p>Sua classe deve ter um construtor que inicialize todos os atributos. <br>
+            Se a quantidade não for positiva, ela deve ser indicada como 0 (zero). <br>
+            Se o preço por item não for positivo ele deve ser indicado como 0.</p>
+
+            <p>Implemente um <strong>método</strong> chamado obterValorTotal() que calcula o valor da fatura (isso é, multiplica a quantidade pelo preço do item).</p>
+
+            <p>Importe a classe Fatura em app.js e crie pelo menos uma instância desta classe para testar a implementação.</p>
+
+            <div class="code">
+                <code>
+                    const melao = new Fatura(123, "Melão", 2, 3);<br><br>
+                    const valor = melao.obterValorTotal(); <br><br>
+                    console.log(valor); // 6
+                </code>
+            </div>
+
+            <p>Extra: Crie um método getter de nome valorTotal que faz o mesmo cálculo implementado em obterValorTotal, mas que possa ser acessado sem o uso dos parêntesis.</p>
+
+        </div>
+        <hr>
+        <div id="res">
+            <strong>Resultado:</strong> <br><br>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo01-Semana05/blob/main/%5BM1S03%5DEx03/script.js" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                para visuallizar o código do meu exercício.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>Aperte a tecla "<strong>F12</strong>" para visualizar o resultado no console do seu navegador.</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://github.com/GeorgeEnriqueBravo" target="_blank" rel="noopener noreferrer">
+        <p>by George Bravo</p>
+        </a>
+    </footer>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>

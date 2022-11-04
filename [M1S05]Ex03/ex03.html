@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S05- Ex03</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Semana 05 - Exercício 03</h1>
+    </header>
+
+    <section>
+        <div>
+            <strong>Classe Personagem</strong>
+        </div>
+        <hr>
+        <div>
+            <p>Em três arquivos (index.html, app.js, Personagem.js) resolva o seguinte exercício:</p>
+
+            <p>Inclua o arquivo app.js em index.html como type="module".</p>
+
+            <p>Para modelar um jogo de ação, em Personajem.js, crie a classe <strong>Personagem</strong> que possua os atributos nome e percentualVida e a exporte como padrão (export default).</p>
+
+            <p>O nome deve ser indicado no construtor da classe, e o percentual de vida é iniciado com 100.</p>
+
+            <p>Crie o método sofreuDano(percentualDano) cuja implementação diminua o valor de percentualDano do percentual de vida do personagem (até o limite de zero).</p>
+
+            <p>Crie também o método usouKitMedico() que adiciona 10 pontos ao percentual de vida do personagem (até o limite de 100).</p>
+
+            <p>mporte a classe Personagem em app.js e crie pelo menos uma instância de personagem para testar.</p>
+
+            <div class="code">
+                <code>
+                    const alyx = new Personagem("Alyx");<br><br>
+                    console.log(alyx.percentualVida); // 100<br><br>
+                    alyx.sofreuDano(50); <br><br>
+                    console.log(alyx.percentualVida); // 50 <br><br>
+                    alyx.usouKitMedico(); <br><br>
+                    console.log(alyx.percentualVida); // 60
+                </code>
+            </div>
+
+        </div>
+        <hr>
+        <div id="res">
+            <strong>Resultado:</strong> <br><br>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo01-Semana05/blob/main/%5BM1S03%5DEx03/script.js" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                para visuallizar o código do meu exercício.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>Aperte a tecla "<strong>F12</strong>" para visualizar o resultado no console do seu navegador.</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://github.com/GeorgeEnriqueBravo" target="_blank" rel="noopener noreferrer">
+        <p>by George Bravo</p>
+        </a>
+    </footer>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>

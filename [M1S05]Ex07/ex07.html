@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S05- Ex07</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Semana 05 - Exercício 07</h1>
+    </header>
+
+    <section>
+        <div>
+            <strong>Classe Time</strong>
+        </div>
+        <hr>
+        <div>
+            <p>Em três arquivos (<span class="code">index.html, app.js, Time.js, Partida.js</span>) resolva o seguinte exercício:</p>
+
+            <p>Inclua o arquivo <span class="code">app.js</span> em <span class="code">index.html </span>como <span class="code">type="module"</span>.</p>
+
+            <p>O sistema de pontuação por partida no Campeonato Brasileiro de Futebol funciona assim:</p>
+
+            <div class="code">
+                <code>
+                    <ol>
+                        <li>Vitória = 3 pontos</li>
+                        <li>Derrota = 0 pontos</li>
+                        <li>Empate  = 1 ponto</li>
+                    </ol>
+                </code>
+            </div>
+
+            <ol type="a">
+                <li>Em <span class="code">Time.js</span>, implemente uma classe <strong>Time</strong> com os atributos: nome do time, sigla do time, quantidade de <span class="code">vitorias</span>, derrotas, empates, quantidade de golsMarcados e golsSofridos.</li><br>
+
+                <li>Adicione nesta classe métodos getters para atributos calculados: <span class="code">numeroDeJogos</span> (soma de vitorias, derrotas e empates) e <span class="code">numeroDePontos</span> (aplicando regra de pontuação acima).</li><br>
+
+                <li>Em <span class="code">Partida.js</span>, crie uma classe <strong>Partida</strong>, com os atributos: <span class="code">siglaTimeA, golsTimeA, siglaTimeB, golsTimeB</span>.</li><br>
+
+                <li>Adicione na classe <span class="code">Time</span> um método <span class="code">computarPartida</span>, que receba uma instância (objeto) de <span class="code">Partida</span> como argumento. Se a partida recebida como argumento tiver como time participante (time A ou B) o time da classe, deve-se atualizar os atributos de <span class="code">vitorias/derrotas/empates</span> do time dependendo do resultado da partida e <span class="code">golsMarcados/golsSofridos</span> conforme placar da partida.</li><br>
+
+                <li>Adicione mais um método <span class="code">exibirSituacao()</span> que imprima no console todos os atributos do time (para conferência das implementações acima).</li><br>
+
+                <li>Em <span class="code">app.js</span> importe e teste suas classes criando uma instâncias dela e instâncias de partidas a serem computadas, para conferir os resultados.</li>
+            </ol>
+
+        </div>
+        <hr>
+        <div id="res">
+            <strong>Resultado:</strong> <br><br>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo01-Semana05/blob/main/%5BM1S03%5DEx03/script.js" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                para visuallizar o código do meu exercício.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>Aperte a tecla "<strong>F12</strong>" para visualizar o resultado no console do seu navegador.</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://github.com/GeorgeEnriqueBravo" target="_blank" rel="noopener noreferrer">
+        <p>by George Bravo</p>
+        </a>
+    </footer>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>

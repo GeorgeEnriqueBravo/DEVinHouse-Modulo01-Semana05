@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S05- Ex05</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Semana 05 - Exercício 05</h1>
+    </header>
+
+    <section>
+        <div>
+            <strong>Classe Área</strong>
+        </div>
+        <hr>
+        <div>
+            <p>Em três arquivos (<span class="code">index.html, app.js, CalculadoraDeArea.js</span>) resolva o seguinte exercício:</p>
+
+            <p>Inclua o arquivo <span class="code">app.js</span> em <span class="code">index.html </span>como <span class="code">type="module"</span>.</p>
+
+            <p>Em <span class="code">CalculadoraDeArea.js</span>, crie uma classe <strong>CalculadoraDeArea</strong> que tenha os atributos tipo (string), base (number) e altura (number).</p>
+
+            <p>Implemente o método <span class="code">calcular()</span> que faça o cálculo da área conforme o <span class="code">tipo</span> do polígono informado:</p>
+
+            <ul>
+                <li>"triangulo": <span class="code">(base * altura) / 2</span></li>
+                <li>"quadrado" e "retangulo" : <span class="code">base * altura</span></li>
+            </ul>
+
+            <p>Importe a classe <span class="code">CalculadoraDeArea</span> em <span class="code">app.js</span> e teste a implementação com instâncias dessa classe para um triângulo de base 6 cm e altura 8 cm, para um quadrado de base e altura de 4 cm e um retângulo de base 4 cm e altura 6 cm.</p>
+
+            <p>Imprima o resultado calculado no console.</p>
+
+            <p>Exemplos:</p>
+
+            <div class="code">
+                <code>              
+                    const quadA = new CalculadoraDeArea("quadrado", 6, 6);<br>
+                    const areaQA = quadA.calcular();<br>
+                    console.log(areaQA); // 36<br><br>
+
+                    const triangB = new CalculadoraDeArea("triangulo", 8, 7);<br>
+                    const areaTB = triangB.calcular(); <br>
+                    console.log(areaTB); // 28
+                </code>
+            </div>
+
+        </div>
+        <hr>
+        <div id="res">
+            <strong>Resultado:</strong> <br><br>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo01-Semana05/blob/main/%5BM1S03%5DEx03/script.js" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+                para visuallizar o código do meu exercício.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>Aperte a tecla "<strong>F12</strong>" para visualizar o resultado no console do seu navegador.</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://github.com/GeorgeEnriqueBravo" target="_blank" rel="noopener noreferrer">
+        <p>by George Bravo</p>
+        </a>
+    </footer>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>
