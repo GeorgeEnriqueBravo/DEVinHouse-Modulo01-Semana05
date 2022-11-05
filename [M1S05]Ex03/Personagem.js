@@ -17,5 +17,8 @@ export default class Personagem {
         } else {
             console.log('Não é possível curar mais, sua vida já está no máximo')
         }
+        if (this.percentualVida > 100) {
+            this.percentualVida = 100
+        }
     }
 }

@@ -1,8 +1,6 @@
 import Usuario from './Usuario.js'
 
-const jonas = new Usuario('Jonas', 'jonas@gmail.com', '123')
-
-console.log(jonas)
+const george = new Usuario('George', 'george@gmail.com', '123')
 
 let res = document.getElementById('res')
 
@@ -13,11 +11,11 @@ botao.addEventListener('click', () => {
     const email = document.getElementById('email').value
     const senha = document.getElementById('senha').value
 
-    if (jonas.autenticar(email, senha)) {
-        console.log("Entrei")
+    if (george.autenticar(email, senha)) {
+        console.log(`Autenticado com sucesso`)
         res.innerHTML = `Autenticado com sucesso`
     } else {
-        console.log("Entrou else")
+        console.log(`Credenciais Inválidas.`)
         res.innerHTML = `Credenciais Inválidas.`
     }
 })
@@ -29,11 +27,11 @@ function chamaAutenticar() {
     const email = document.getElementById('email').value
     const senha = document.getElementById('senha').value
 
-    if (jonas.autenticar(email, senha)) {
-        console.log("Entrei")
+    if (george.autenticar(email, senha)) {
+        console.log(`Autenticado com sucesso`)
         res.innerHTML = `Autenticado com sucesso`
     } else {
-        console.log("Entrou else")
-        res.innerHTML = `Falha na autenticação`
+        console.log(`Credenciais Inválidas.`)
+        res.innerHTML = `Credenciais Inválidas.`
     }
 }

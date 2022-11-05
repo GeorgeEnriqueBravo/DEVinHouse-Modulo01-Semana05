@@ -14,7 +14,7 @@ export default class Time {
     }
 
     get numeroDePontos() {
-        return this.vitorias + this.empates
+        return (this.vitorias * 3) + this.empates
     }
 
     computarPartida(partida) {

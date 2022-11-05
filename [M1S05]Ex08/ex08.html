@@ -20,7 +20,7 @@
         </div>
         <hr>
         <div>
-            <p>Crie uma pagina HTML de autenticacao baseado no layout em anexo.</p>
+            <p>Crie uma pagina HTML de autenticação baseado no layout em anexo.</p>
 
             <p>Dado a classe Usuário abaixo:</p>
 
@@ -28,13 +28,13 @@
                 <code>         
                     class Usuario { <br>
                         constructor(nome, email, senha) { <br>
-                            this.nome = nome; <br>
-                            this.email = email; <br>
-                            this.senha = senha; <br>
+                            &emsp; this.nome = nome; <br>
+                            &emsp; this.email = email; <br>
+                            &emsp; this.senha = senha; <br>
                         } <br><br>
 
                         autenticar(emailInformado, senhaInformada) { <br>
-                            return (this.email === emailInformado && this.senha === senhaInformada); <br>
+                            &emsp; return (this.email === emailInformado && this.senha === senhaInformada); <br>
                         } <br>
                     } <br>
                 </code>
@@ -54,10 +54,14 @@
 
         </div>
         <hr>
+            <div><strong>Testar validação com:</strong> <br><br>
+                <strong>e-mail:</strong> george@gmail.com <br>
+                <strong>Senha:</strong> 123
+            </div>
         <br>
         <div id="login">
             E-mail: <input type="text" id="email">
-            Senha: <input type="text" id="senha">
+            Senha: <input type="text" id="senha"> <br><br>
             <button type="button" id="acessar">Acessar</button>
         </div>
         <br>

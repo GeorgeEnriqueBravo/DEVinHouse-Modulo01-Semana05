@@ -1,4 +1,3 @@
-import Time from "./Time.js"
 
 export default class Partida {
     constructor(siglaTimeA, golsTimeA, siglaTimeB, golsTimeB) {

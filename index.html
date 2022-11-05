@@ -4,74 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Exercício</title>
+    <title>Lista de Exercícios</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" type="image/x-icon" href="imagens/faviconDev.png">
 </head>
 
 <body>
     <header>
-        <h1>Lista de Exercícios<br>Módulo 01 - Semana 03</h1>
-        <h2><a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo01-Semana03" rel="noopener noreferrer">Clique aqui</a> para retornar ao meu GitHub</h2>
+        <h1>Lista de Exercícios<br>Módulo 01 - Semana 05</h1>
+        <h2><a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo01-Semana05" rel="noopener noreferrer">Clique aqui</a> para retornar ao meu GitHub</h2>
     </header>
 
     <section>
         <div>
-            <h3>Exercício 01 - Use Let, Const e Array</h3>
+            <h3>Exercício 01 - Classe Funcionário</h3>
             <p><strong>Descrição:</strong></p>
-
-            <p>Implemente uma função "procuraMinMax" que receba como parâmetro um array (numérico) e identifique o menor e o maior valor do mesmo.
-
-            <p>Imprima no console estes valores ou "Não é possível encontrar" quando não for possível.</p>
-
-            <p>Teste a função com as seguintes entradas:</p>
-
-            <ul>
-                <li>[56, 65, 64, -3, 23, 42, -15, 65, 14, 32, 78, 70, 47]</li> 
-                <li>[]</li> 
-                <li>[1]</li> 
-                <li>[1, -1]</li> 
-                <li>null</li>
-                <li>[-2,-2,-2,-2]</li>
-                <li>[20,10, 30]</li>
-            </ul>
-
-            <p>Obs.: Use let e const para declarar variáveis se for necessário. <br>
-            Extra: Faça com uma arrow function.</p>
-
-            <p>Concluído ✔️ <a href="[M1S03]Ex01/ex01.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
-        </div>
-        <hr>
-        <div>
-            <h3>Exercício 02 - Mensagem Arrow</h3>
-            <p><strong>Descrição:</strong></p>
-
-            <p>Em um arquivo app.js (incluído em index.html) faça o seguinte:</p>
-
-            <p>No documento js faça uma arrow function para retornar uma mensagem (string) de "Olá, Mundo!".</p>
-
-            <p>Armazene esta arrow function em uma constante (const) de nome mensagemOla.</p>
-
-            <p>Chame a função mensagemOla e exiba o retorno desta função no console.</p>
             
-            <p>Ajuste a função mensagemOla para que receba um parâmetro nome e retorne a mensagem "Olá, [nome]!".</p>
-
-            <p>Exemplo:</p>
-
-            <div class="code">
-            <code>mensagemOla("Mariana"); <br>
-                // "Olá, Mariana!"</code>
+            <div>
+                <p>Em um arquivo app.js incluído em <span class="code">index.html</span> de tipo módulo <span class="code">type="module"</span>:</p>
+    
+                <p>Crie uma classe <strong>Funcionario</strong> para representar um(a) empregado(a) de uma empresa, contendo os atributos <span class="code">cpf, nomeCompleto e salario.</span></p>
+    
+                <p>Implemente também um método <span class="code">promover(percentual)</span> que recebe como parâmetro um percentual, devendo o salário ser aumentado pelo percentual indicado no argumento do método..</p>
+    
+                <p>Crie e utilize um objeto desta classe para testar a implementação.</p>
+    
+                <p>Exemplo:</p>
+    
+                <div class="code">
+                    <code>
+                        const ada = new Funcionario("528.442.040-31", "Ada Lovelace", 1000); <br><br>
+                        console.log(ada.salario); // 1000 <br><br>
+                        ada.promover(50); <br><br>
+                        console.log(ada.salario); // 1500
+                    </code>
+                </div>
+    
+                <p>Extras:</p>
+    
+                <ul>
+                    <li>Crie a classe em um arquivo separado Funcionario.js, a exporte como padrão (<span class="code">export default</span>), importe-a em <span class="code">app.js</span> e use-a no código.</li> <br>
+    
+                    <li>Valide o CPF informado e imprima no console se o CPF informado é válido ou não.</li>
+                </ul>
             </div>
 
-            <p>Ao final, devemos ter uma função que monta uma mensagem de olá customizada com o nome informado por parâmetro.</p>
-
-            <p>Extra: Caso queira, podes experimentar criar um campo de texto, um botão e um parágrafo em index.html e fazer com que a função de nome seja executada ao pressionarmos o botão, que o nome pode seja lido do campo de texto e a mensagem seja exibida no parágrafo.</p>
-
-            <p>Concluído ✔️ <a href="[M1S03]Ex02/ex02.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
+            <p>Concluído ✔️ <a href="[M1S05]Ex01/ex01.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
         </div>
         <hr>
         <div>
-            <h3>Exercício 03 - Concatenar Spread</h3>
+            <h3>Exercício 02 - Classe Fatura</h3>
+            <p><strong>Descrição:</strong></p>
+
+            <p>Em três arquivos (<span class="code">index.html, app.js, Fatura.js</span>) resolva o seguinte exercício:</p>
+
+            <p>Inclua o arquivo <span class="code">app.js</span> em <span class="code">index.html</span> como <span class="code">type="module"</span>.</p>
+
+            <p>Em <span class="code">Fatura.js</span>, crie uma classe chamada <strong>Fatura</strong> que possa ser utilizada por uma fábrica, representando um item vendido e a exporte como padrão (<span class="code">export default</span>).</p>
+
+            <p>Uma fatura deve incluir as seguintes informações como atributos :</p>
+
+            <ul>
+                <li><span class="code">id</span>: number identificador do item faturado (código do produto)</li>
+                <li><span class="code">descricao</span>: string com a descrição do item</li>
+                <li><span class="code">quantia</span>: number com a quantidade comprada do item</li>
+                <li><span class="code">preco</span>: number com o preço unitário do item</li>
+            </ul>
+
+            <p>Sua classe deve ter um construtor que inicialize todos os atributos. <br>
+            Se a quantidade não for positiva, ela deve ser indicada como <span class="code">0</span> (zero). <br>
+            Se o preço por item não for positivo ele deve ser indicado como <span class="code">0</span>.</p>
+
+            <p>Implemente um <strong>método</strong> chamado <span class="code">obterValorTotal()</span> que calcula o valor da fatura (isso é, multiplica a quantidade pelo preço do item).</p>
+
+            <p>Importe a classe <span class="code">Fatura</span> em <span class="code">app.js</span> e crie pelo menos uma instância desta classe para testar a implementação.</p>
+
+            <div class="code">
+                <code>
+                    const melao = new Fatura(123, "Melão", 2, 3);<br><br>
+                    const valor = melao.obterValorTotal(); <br><br>
+                    console.log(valor); // 6
+                </code>
+            </div>
+
+            <p>Extra: Crie um método getter de nome <span class="code">valorTotal</span> que faz o mesmo cálculo implementado em <span class="code">obterValorTotal</span>, mas que possa ser acessado sem o uso dos parêntesis.</p>
+        </div>
+
+            <p>Concluído ✔️ <a href="[M1S05]Ex02/ex02.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
+        </div>
+        <hr>
+        <div>
+            <h3>Exercício 03 - Classe Personagem</h3>
 
             <p><strong>Descrição:</strong></p>
 
@@ -98,91 +121,105 @@
 
             <p>Obs.: Em index.html deve ser incluído o arquivo app.js, para executarmos o script com a função.</p>
 
-            <p>Concluído ✔️ <a href="[M1S03]Ex03/ex03.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
+            <p>Concluído ✔️ <a href="[M1S05]Ex03/ex03.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
 
         </div>
         <hr>
         <div>
-            <h3>Exercício 04 - Mesclando Objetos</h3>
+            <h3>Exercício 04 - Subclasses Animal</h3>
             <p><strong>Descrição:</strong></p>
 
-            <p>
-                Para exercitarmos spread com objetos: <br>
-                Em um arquivo app.js incluído em index.html escreva uma função de nome mesclaObjetos, que aceita dois objetos como parâmetro e retorna um novo objeto que contem todos os pares chave-valor do primeiro e do segundo objetos.
-            </p>
-
-            <p>Exemplo:</p>
-
-            <div class="code">
-                <code>
-                    const objUm = { a: 1, b: 2 }; <br>
-                    const objDois = { c: 3, d: 4 }; <br>
-                    const novoObjeto = mesclaObjetos(objUm, objDois); <br>
-                    console.log(novoObjeto); <br>
-                    // { a: 1, b: 2, c: 3, d: 4 }
-                </code>
-            </div>
-                
-            <p>Extra: Faça utilizando arrow function.</p>
-
-            <p>Concluído ✔️ <a href="[M1S03]Ex04/ex04.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
-        </div>
-        <hr>
-        <div>
-            <h3>Exercício 05 - Parâmetros Infinitos</h3>
-            <p><strong>Descrição:</strong></p>
-
-            <p>Para treinar os conceitos de Rest.</p>
-
-            <p>
-                Crie dois arquivos: <br>
-                - index.html <br>
-                - app.js
-            </p>
-
-            <p>No arquivo apps.js, utilizando o operador Rest, crie uma função que receba como parâmetro uma quantidade indefinida de variáveis inteiras (números inteiros).</p>
-
-            <p>A função deve retornar a soma de todos os parâmetros (...). <br>
-            Após executada a função, o resultado deve ser exibido no console.</p>
-
-            <p>Exemplo:</p>
-
-            <div class="code">
-                <code>
-                    const resultado = somaTudo(1, 2, 3, 4); <br>
-                    console.log(resultado); <br>
-                    // resultado deve ser 10
-                </code>
+            <div>
+                <p>Em três arquivos (<span class="code">index.html, app.js, Personagem.js</span>) resolva o seguinte exercício:</p>
+    
+                <p>Inclua o arquivo <span class="code">app.js</span> em <span class="code">index.html </span>como <span class="code">type="module"</span>.</p>
+    
+                <p>No arquivo <span class="code">Animal.js</span>, crie a classe <strong>Animal</strong> com os atributos <span class="code">nome, idade e som</span>.</p>
+    
+                <p>Depois crie as subclasses (de <strong>Animal</strong>) <strong>Cachorro</strong> e <strong>Gato</strong> com os atributos <span class="code">nome</span> e <span class="code">idade</span>, inicializando o atributo som da superclasse com <span class="code">"latido"</span> e <span class="code">"miado"</span>, respectivamente e exporte ambas com <span class="code">export</span> comuns.</p>
+    
+                <p>Importe as classes <span class="code">Cahorro</span> e <span class="code">Gato</span> para <span class="code">app.js</span>, crie uma instância de cada subclasse para testar, conforme abaixo.</p>
+    
+                <p>Exemplos:</p>
+    
+                <div class="code">
+                    <code>
+                        const snoopy = new Cachorro('snoopy', 10);<br>
+                        console.log( snoopy.som );   // "latido"<br>
+                        const frajola = new Gato('frajola', 8);<br>
+                        alyx.usouKitMedico(); <br>
+                        console.log( frajola.som );   // "miado"
+                    </code>
+                </div>
+    
             </div>
 
-            <p>Obs.: Em index.html deve ser incluído o arquivo app.js, para rodar o script e executarmos a função.</p>
+            <p>Concluído ✔️ <a href="[M1S05]Ex04/ex04.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
+        </div>
+        <hr>
+        <div>
+            <h3>Exercício 05 - Classe Área</h3>
+            <p><strong>Descrição:</strong></p>
 
-            <p>Concluído ✔️ <a href="[M1S03]Ex05/ex05.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
+            <div>
+                <p>Em três arquivos (<span class="code">index.html, app.js, CalculadoraDeArea.js</span>) resolva o seguinte exercício:</p>
+    
+                <p>Inclua o arquivo <span class="code">app.js</span> em <span class="code">index.html </span>como <span class="code">type="module"</span>.</p>
+    
+                <p>Em <span class="code">CalculadoraDeArea.js</span>, crie uma classe <strong>CalculadoraDeArea</strong> que tenha os atributos tipo (string), base (number) e altura (number).</p>
+    
+                <p>Implemente o método <span class="code">calcular()</span> que faça o cálculo da área conforme o <span class="code">tipo</span> do polígono informado:</p>
+    
+                <ul>
+                    <li>"triangulo": <span class="code">(base * altura) / 2</span></li>
+                    <li>"quadrado" e "retangulo" : <span class="code">base * altura</span></li>
+                </ul>
+    
+                <p>Importe a classe <span class="code">CalculadoraDeArea</span> em <span class="code">app.js</span> e teste a implementação com instâncias dessa classe para um triângulo de base 6 cm e altura 8 cm, para um quadrado de base e altura de 4 cm e um retângulo de base 4 cm e altura 6 cm.</p>
+    
+                <p>Imprima o resultado calculado no console.</p>
+    
+                <p>Exemplos:</p>
+    
+                <div class="code">
+                    <code>              
+                        const quadA = new CalculadoraDeArea("quadrado", 6, 6);<br>
+                        const areaQA = quadA.calcular();<br>
+                        console.log(areaQA); // 36<br><br>
+    
+                        const triangB = new CalculadoraDeArea("triangulo", 8, 7);<br>
+                        const areaTB = triangB.calcular(); <br>
+                        console.log(areaTB); // 28
+                    </code>
+                </div>
+    
+            </div>
+
+            <p>Concluído ✔️ <a href="[M1S05]Ex05/ex05.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
 
         </div>
         <hr>
         <div>
-            <h3>Exercício 06 - Palíndromo</h3>
+            <h3>Exercício 06 - Classe Juros</h3>
             <p><strong>Descrição:</strong></p>
 
-            <p>
-                Um palindrome (palíndromo), segundo o dicionário Houaiss, <strong>"diz-se de frase ou palavra que se pode ler, indiferentemente, da esquerda para direita ou vice-versa"</strong>, como por exemplo: osso, Ana, radar.
-            </p>
-
-            <p>Ou seja, é uma palavra que quando lida de trás pra frente tem o mesmo significado.</p>
-
-            <p>Implemente uma função em JavaScript que receba uma string como parâmetro e retorne se determinada palavra é um palindromo ou não.</p>
-
-            <p>Exemplo:</p>
-
-            <div class="code">
-                <code>
-                    const teste1 = verificaPalindromo("ana"); <br>
-                    // true
-                    <br><br>
-                    const teste2 = verificaPalindromo("julia"); <br>
-                    // false
-                </code>
+            <div>
+                <p>Em três arquivos (<span class="code">index.html, app.js, Juros.js</span>) resolva o seguinte exercício:</p>
+    
+                <p>Inclua o arquivo <span class="code">app.js</span> em <span class="code">index.html </span>como <span class="code">type="module"</span>.</p>
+    
+                <p>Os juros de uma aplicação podem ser calculados de forma simples ou composta. <br>
+                Para o cálculo, geralmente se usa a letra <span class="code">C</span> ou <span class="code">M</span> para representar o montante final da aplicação, a letra <span class="code">i</span> para representar a taxa aplicada (ao mês ou anual) e a letra <span class="code">t</span> indicando o tempo (em meses ou anos) da aplicação.</p>
+    
+                <p>Em <span class="code">Juros.js</span>, crie uma classe <strong>Juros</strong>, que tenha como atributos o <span class="code">capitalInicial</span>, a <span class="code">taxaAplicada</span> e o <span class="code">tempo</span> (no mesmo período: meses ou anos) exportando-a como padrão <span class="code">(export default)</span>.</p>
+    
+                <ol type="a">
+                    <li>Adicione o método <span class="code">calcularJurosSimples()</span> que faça o cálculo usando a fórmula <span class="code">J = C * i * t</span></li><br>
+                    <li>Adicione o método <span class="code">calcularJurosCompostos()</span> que faça o cálculo usando a fórmula <span class="code">M = C * (1 + i) ** t</span></li><br>
+                    <li>Importe a classe em <span class="code">app.js</span> e teste a implementação da classe imprimindo no console os valores de juros simples e composto para uma aplicação de 10.000 reais a uma taxa de 7% ao mês (ou seja, 0.07) pelo período de 24 meses.</li><br>
+                    <li>Teste também (imprimindo igualmente no console) os valores de juros simples e composto para uma aplicação de 10.000 reais a uma taxa de 15% ao ano (ou seja, 0.15) pelo período de 10 anos.</li>
+                </ol>
+    
             </div>
 
             <p>
@@ -190,69 +227,90 @@
                 Extra: Faça com uma arrow function.
             </p>
 
-            <p>Concluído ✔️ <a href="[M1S03]Ex06/ex06.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
+            <p>Concluído ✔️ <a href="[M1S05]Ex06/ex06.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
         </div>
         <hr>
         <div>
-            <h3>Exercício 07 - Destruct</h3>
+            <h3>Exercício 07 - Classe Time</h3>
             <p><strong>Descrição:</strong></p>
 
-            <p>Em um arquivo app.js incluído em index.html, crie um objeto com a seguinte estrutura:</p>
-
-            <div class="code">
-                <code>
-                    const pessoa = { <br>
-                        nome: 'Ada', <br>
-                        idade: 36 <br>
-                        profissao: 'matemática' <br>
-                      };
-                </code>
+            <div>
+                <p>Em três arquivos (<span class="code">index.html, app.js, Time.js, Partida.js</span>) resolva o seguinte exercício:</p>
+    
+                <p>Inclua o arquivo <span class="code">app.js</span> em <span class="code">index.html </span>como <span class="code">type="module"</span>.</p>
+    
+                <p>O sistema de pontuação por partida no Campeonato Brasileiro de Futebol funciona assim:</p>
+    
+                <div class="code">
+                    <code>
+                        <ol>
+                            <li>Vitória = 3 pontos</li>
+                            <li>Derrota = 0 pontos</li>
+                            <li>Empate  = 1 ponto</li>
+                        </ol>
+                    </code>
+                </div>
+    
+                <ol type="a">
+                    <li>Em <span class="code">Time.js</span>, implemente uma classe <strong>Time</strong> com os atributos: nome do time, sigla do time, quantidade de <span class="code">vitorias</span>, derrotas, empates, quantidade de golsMarcados e golsSofridos.</li><br>
+    
+                    <li>Adicione nesta classe métodos getters para atributos calculados: <span class="code">numeroDeJogos</span> (soma de vitorias, derrotas e empates) e <span class="code">numeroDePontos</span> (aplicando regra de pontuação acima).</li><br>
+    
+                    <li>Em <span class="code">Partida.js</span>, crie uma classe <strong>Partida</strong>, com os atributos: <span class="code">siglaTimeA, golsTimeA, siglaTimeB, golsTimeB</span>.</li><br>
+    
+                    <li>Adicione na classe <span class="code">Time</span> um método <span class="code">computarPartida</span>, que receba uma instância (objeto) de <span class="code">Partida</span> como argumento. Se a partida recebida como argumento tiver como time participante (time A ou B) o time da classe, deve-se atualizar os atributos de <span class="code">vitorias/derrotas/empates</span> do time dependendo do resultado da partida e <span class="code">golsMarcados/golsSofridos</span> conforme placar da partida.</li><br>
+    
+                    <li>Adicione mais um método <span class="code">exibirSituacao()</span> que imprima no console todos os atributos do time (para conferência das implementações acima).</li><br>
+    
+                    <li>Em <span class="code">app.js</span> importe e teste suas classes criando uma instâncias dela e instâncias de partidas a serem computadas, para conferir os resultados.</li>
+                </ol>
+    
             </div>
 
-            <p>Faça uma função que receba este objeto por parâmetro, desestruture-o no começo da função (utilizando destruct) criando três variáveis <strong>(nome, idade, profissao</strong>).</p>
-
-            <p>Faça ainda com que a função retorne uma string com a seguinte mensagem:</p>
-
-            <div class="code">
-                <code>
-                    "Esta é Ada, tem 36 anos e é matemática."
-                </code>
-            </div>
-
-            <p>Concatene as variáveis criadas com destruct para formar a mensagem.</p>
-
-            <p>Chame a função passando o objeto por parâmetro e exiba o retorno no console.</p>
-
-            <p>Extra: Faça o destruct acontecer diretamente na linha de declaração dos parâmetros da função. Por fim faça com uma arrow function.</p>
-
-            <p>Concluído ✔️ <a href="[M1S03]Ex07/ex07.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
+            <p>Concluído ✔️ <a href="[M1S05]Ex07/ex07.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
 
         </div>
         <hr>
         <div>
-            <h3>Exercício 08 - Une, Dobra e Retorna</h3>
+            <h3>Exercício 08 - Classe Usuário</h3>
             <p><strong>Descrição:</strong></p>
 
-            <p>Para exercitarmos rest e repetições com vetores:</p>
-
-            <p>Em um arquivo app.js incluído em index.html escreva uma função arrow e armazene-a em uma variável de nome uneDobraRetorna, que aceita um array de números e qualquer outra quantidade de números como parâmetro. A função deve retornar um novo vetor que começa com o vetor inicial concatenado com os outros parâmetros extra dobrados de valor.</p>
-
-            <p>Exemplo:</p>
-
-            <div class="code">
-                <code>
-                    const r1 = uneDobraRetorna([1, 2, 3], 4, 4) <br>
-                    console.log(r1) // [1, 2, 3, 8, 8] <br><br>
-                    
-                    const r2 = uneDobraRetorna([2], 10, 4, 8) <br>
-                    console.log(r2) // [2, 20, 8, 16] <br><br>
-                    
-                    const r3 = uneDobraRetorna([6, 8]) <br>
-                    console.log(r3) // [6, 8]
-                </code>
+            <div>
+                <p>Crie uma pagina HTML de autenticação baseado no layout em anexo.</p>
+    
+                <p>Dado a classe Usuário abaixo:</p>
+    
+                <div class="code">
+                    <code>         
+                        class Usuario { <br>
+                            constructor(nome, email, senha) { <br>
+                                &emsp; this.nome = nome; <br>
+                                &emsp; this.email = email; <br>
+                                &emsp; this.senha = senha; <br>
+                            } <br><br>
+    
+                            autenticar(emailInformado, senhaInformada) { <br>
+                                &emsp; return (this.email === emailInformado && this.senha === senhaInformada); <br>
+                            } <br>
+                        } <br>
+                    </code>
+                </div>
+    
+                <p>Use esta classe 'Usuário' para implementar a autenticação quando for clicado no botão 'Acessar'.</p>
+    
+                <p>Dicas:</p>
+    
+                <ol type="a">
+                    <li>a) Instancie um usuário indicando seus atributos: nome, email e senha (podem ser dados fixos e indicados no momento da criação do objeto).</li><br>
+                    <li>Colocar no evento relacionado ao botão a chamada para uma função que faça uso do método 'autenticar' deste objeto previamente instanciado.</li><br>
+                    <li>Se a autenticação tiver sucesso (resultado = true), exibir mensagem de sucesso na tela, caso contrário, exibir mensagem de credenciais inválidas.</li>
+                </ol>
+    
+                <p>Sugestão: aplique estilo CSS na página para praticar!</p>
+    
             </div>
 
-            <p>Concluído ✔️ <a href="[M1S03]Ex08/ex08.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
+            <p>Concluído ✔️ <a href="[M1S05]Ex08/ex08.html" target="_blank" rel="noopener noreferrer">Clique aqui para visualizar</a></p>
         </div>
     </section>
 
